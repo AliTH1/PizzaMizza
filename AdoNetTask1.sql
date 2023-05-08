@@ -125,15 +125,13 @@ ON p.Id = pt.PizzaId
 INNER JOIN Prices AS ps
 ON ps.PizzaId = p.Id
 
-SELECT ig.Name
-FROM Pizzas AS p
-INNER JOIN Innergredients AS ig
-ON ig.Id = p.Id
 
 
-SELECT ig.Name
-FROM Innergredients AS ig
-INNER JOIN PizzaInnergredient AS pig
-ON pig.PizzaId = ig.Id
-INNER JOIN Prices AS ps
-ON ps.SizeId = 
+-- Burani yaza bilmedim, sql sorgu ata bilmedim
+--Pizzaların siyahısı çıxandan sonra:
+--Pizza haqqında ətraflı məlumat almaq istəyirsizsə
+--pizzanın İd -sini ,istəmirsizə 0 daxil edin - Mesajı çıxsın.
+--İd -> daxil edildikdə həmin İd -yə uyğun pizzanın:
+--  İngredientləri
+--  Ardınca,hər ölçü üçün qiymətləri consola çıxsın
+--0 -> daxil edildikdə əsas menyuya geri dönsün
