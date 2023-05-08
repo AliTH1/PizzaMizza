@@ -29,7 +29,7 @@ if (answer == 1)
 else if (answer == 2)
 {
     string namePizza = Console.ReadLine();
-
+    //Bu hisseni yaza bilmedim sql de sorgu ata bilmedim :(
 
 }
 

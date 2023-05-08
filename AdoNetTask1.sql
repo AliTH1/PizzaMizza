@@ -125,15 +125,15 @@ ON p.Id = pt.PizzaId
 INNER JOIN Prices AS ps
 ON ps.PizzaId = p.Id
 
-SELECT p.Id, p.Name, pt.TypeId, ps.Price
+SELECT ig.Name
 FROM Pizzas AS p
-INNER JOIN PizzaTypes AS pt
-ON p.Id = pt.PizzaId
+INNER JOIN Innergredients AS ig
+ON ig.Id = p.Id
+
+
+SELECT ig.Name
+FROM Innergredients AS ig
+INNER JOIN PizzaInnergredient AS pig
+ON pig.PizzaId = ig.Id
 INNER JOIN Prices AS ps
-ON ps.PizzaId = p.Id
-
-
-
-
-
-INNER JOIN Prices AS ps
+ON ps.SizeId = 
